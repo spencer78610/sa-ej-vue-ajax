@@ -1,0 +1,31 @@
+@keyframes loadingDots {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    75% { opacity: 1; }
+  }
+  
+  .loading {
+    display: inline-block;
+    font-size: 30px;
+  }
+  
+  .loading span {
+    opacity: 0;
+    animation: loadingDots 1s infinite;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .loading .dot1 {
+    animation-delay: 0s;
+  }
+  
+  .loading .dot2 {
+    animation-delay: 0.25s;
+  }
+  
+  .loading .dot3 {
+    animation-delay: 0.5s;
+  }
+  
