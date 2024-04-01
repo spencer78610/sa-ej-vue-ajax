@@ -19,7 +19,7 @@
             <ul id="project-list">
                 <li v-for="project in projectsData">
                     <h3>Title:
-                        <a href="#project" @click="getProject(project.title)">
+                        <a href="#projectInfoCon" @click="getProject(project.title)">
                             {{project.title}}
                         </a>
                     </h3>
@@ -43,6 +43,7 @@
                 <p>
                     <span class="label">Features:</span> {{projectInfo.features}}
                 </p>
+                <a id="scrollTop" href="#project-list">TOP</a>
             </div>
         </div>
     </div>
