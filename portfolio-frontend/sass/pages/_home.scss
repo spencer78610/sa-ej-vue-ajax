@@ -1,7 +1,6 @@
 body {
 	font-family: "Lato", sans-serif;
 	padding: 20px;
-    background-image: linear-gradient((rgb(228, 166, 118)),(rgb(255, 190, 48)));
 }
 
 #app {
@@ -22,8 +21,6 @@ h2 {
     margin-top: 20px;
     font-size: 38px;
     margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
 }
 
 h3 {
@@ -35,7 +32,6 @@ h3 {
 p {
     font-size: 20px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 #project-list {
@@ -53,21 +49,7 @@ p {
     margin-top: 20px;
 }
 
-#project p {
-    text-align: left;
-}
-
 .label {
     font-weight: bold;
     color: rgb(49, 127, 230); 
-}
-
-#scrollTop {
-    display: block;
-}
-
-@media screen and (min-width: 768px) {
-    #scrollTop {
-        display: none;
-    }
 }

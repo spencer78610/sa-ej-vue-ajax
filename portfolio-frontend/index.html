@@ -13,13 +13,13 @@
 
 <body>
     <div class="grid-con" id="app">
-        <h2 class="col-span-full m-col-span-full" id="scroll">My Portfolio API</h2>
-            <p class="col-span-full m-col-span-full">Look through my projects!!</p>
         <div class="col-span-full m-col-start-1 m-col-end-7">
+            <h2 id="scroll">My Portfolio API</h2>
+            <p>Look through my projects!!</p>
             <ul id="project-list">
                 <li v-for="project in projectsData">
                     <h3>Title:
-                        <a href="#projectInfoCon" @click="getProject(project.title)">
+                        <a href="#scroll" @click="getProject(project.title)">
                             {{project.title}}
                         </a>
                     </h3>
@@ -32,7 +32,7 @@
             <div v-if="error">{{error}}</div>
             <div v-if="Object.keys(projectInfo).length > 0" id="project">
                 <p>
-                    <span class="label">Description:</span> {{projectInfo.description}}
+                    <span class="label">Discription:</span> {{projectInfo.description}}
                 </p>
                 <p>
                     <span class="label">Credit:</span> {{projectInfo.credit}}
@@ -43,7 +43,6 @@
                 <p>
                     <span class="label">Features:</span> {{projectInfo.features}}
                 </p>
-                <a id="scrollTop" href="#project-list">TOP</a>
             </div>
         </div>
     </div>
