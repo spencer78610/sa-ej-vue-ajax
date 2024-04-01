@@ -22,13 +22,13 @@ To run this project locally, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/portfolio-projects-vue.git
+git clone https://github.com/spencer78610/sa-ej-vue-ajax.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd portfolio-projects-vue
+cd sa-ej-vue-ajax
 ```
 
 3. Install the project dependencies:
@@ -54,6 +54,8 @@ npm run serve
 ```
 
 This will start a development server, and you can view the portfolio website by opening your browser and navigating to `http://localhost:8080` (or another port if 8080 is in use).
+
+You can also use the application WAMP or MAMP (for windows and mac respectively) to create a local server on your system.
 
 ## Contributing
 
