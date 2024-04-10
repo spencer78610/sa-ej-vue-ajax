@@ -19,7 +19,7 @@
             <ul id="project-list">
                 <li v-for="project in projectsData">
                     <h3>Title:
-                        <a href="#project" @click="getProject(project.title)">
+                        <a href="#scroll-load" @click="getProject(project.title)">
                             {{project.title}}
                         </a>
                     </h3>
@@ -28,7 +28,7 @@
             </ul>
         </div>
         <div class="col-span-full m-col-start-8 m-col-end-13" id="projectInfoCon">
-            <div v-if="isLoading" class="loading">Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span></div>
+            <div v-if="isLoading" id="scroll-load" class="loading">Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span></div>
             <div v-if="error">{{error}}</div>
             <div v-if="Object.keys(projectInfo).length > 0" id="project">
                 <p>
